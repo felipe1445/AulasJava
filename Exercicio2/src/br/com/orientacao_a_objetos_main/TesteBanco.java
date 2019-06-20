@@ -15,6 +15,8 @@ public class TesteBanco {
 		conta2.nome = "gustavo";
 		conta2.codigo = 321;
 		
+		//testes feitos para os exercicios 1~16 e atualizado nas outras classes
+		
 		CartaoDeCredito cartao1 = new CartaoDeCredito();
 		CartaoDeCredito cartao2 = new CartaoDeCredito();	
 		
@@ -25,8 +27,8 @@ public class TesteBanco {
 		cartao2.dataValidadeCartao = "19/11/1980";
 		
 		
-		System.out.printf("numero do cartao é %i e data de validade é %s", cartao1.numeroCartao, cartao1.dataValidadeCartao);
-		System.out.printf("numero do cartao2 é %i e data de validade2 é %s", cartao2.numeroCartao, cartao2.dataValidadeCartao);
+		System.out.printf("numero do cartao é: %d \ndata de validade é: %s ", cartao1.numeroCartao, cartao1.dataValidadeCartao);
+		System.out.printf("\nnumero do cartao 2 é: %d \ndata de validade 2 é: %s ", cartao2.numeroCartao, cartao2.dataValidadeCartao);
 		
 		Agencia ag1 = new Agencia();
 		Agencia ag2 = new Agencia();
@@ -34,13 +36,11 @@ public class TesteBanco {
 		ag1.numeroAgencia = 1;
 		ag2.numeroAgencia = 2;
 		
-		System.out.println("Numero da agencia: "+ag1.numeroAgencia);
-		System.out.println("Numero da agencia2: "+ag2.numeroAgencia);
+		System.out.println("\nNumero da agencia: "+ag1.numeroAgencia);
+		System.out.println("Numero da agencia 2: "+ag2.numeroAgencia);
 		
-		System.out.println("nome cliente: "+ conta1.nome + "\nconta: " + conta1.codigo 
-				+ "\nlimite: R$ " + conta1.limite);
-		System.out.println("nome cliente: "+ conta2.nome + "\nconta: " + conta2.codigo
-				+ "\nlimite: R$ " + conta2.limite);
+		System.out.println("nome cliente: "+ conta1.nome + "\nconta: " + conta1.codigo);
+		System.out.println("nome cliente: "+ conta2.nome + "\nconta: " + conta2.codigo);
 	}
 
 }

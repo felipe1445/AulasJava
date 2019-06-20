@@ -4,11 +4,13 @@ public class Funcionario {
 	public String nomeFunc;
 	public double salarioFunc;
 	
-	void receberSalario() {		
+
+	public void aumentaSalario(double valor) {
+		this.salarioFunc+=valor;
 	}
-	void aumentaSalario() {		
-	}
-	void mudacargo() {		
+	
+	public String consultaDados() {
+		return "nome do funcionario: "+this.nomeFunc + "\nSalario: R$" + String.valueOf(this.salarioFunc);		
 	}
 	
 	
