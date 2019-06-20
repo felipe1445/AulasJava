@@ -1,13 +1,19 @@
 package br.com.orientacao_a_objetos;
 
 public class Cliente {
-	String nome;
-	int codigo;
-	double limite = 100;
+	public String nome;
+	public int codigo;
+	public double limite = 100;	
 	
-	public Cliente(String nome, int codigo) {		
-		this.nome = nome;
-		this.codigo = codigo;
+	void aumentarlimite() {		
 	}
-
+	void novocartaoDebito() {		
+	}
+	
+	void sacar() {		
+	}
+	void depositar() {		
+	}
+	void tirarExtrado() {		
+	}
 }

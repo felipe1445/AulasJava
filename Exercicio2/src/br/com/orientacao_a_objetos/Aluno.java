@@ -1,7 +1,7 @@
 package br.com.orientacao_a_objetos;
 
 public class Aluno {
-	String nome;
-	int rg;
-	String datanascAluno;
+	public String nome;
+	public int rg;
+	public String datanascAluno;
 }
