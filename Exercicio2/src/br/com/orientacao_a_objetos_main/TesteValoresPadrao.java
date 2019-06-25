@@ -4,30 +4,20 @@ import br.com.orientacao_a_objetos.Agencia;
 import br.com.orientacao_a_objetos.Cliente;
 import br.com.orientacao_a_objetos.Conta;
 
-public class TesteContaAgencia {
+public class TesteValoresPadrao {
 
 	public static void main(String[] args) {		
 		Agencia ag1 = new Agencia(1);
 		Cliente felipe = new Cliente();
 		Conta conta1 = new Conta(felipe);
 		
-		//definindo dados cliente
-		felipe.nome = "felipe";
-		felipe.codigo = 1;
-		
-		//definindo dados agencia
-		ag1.numeroAgencia = 123;	
-		
-		//associando as classes
-		conta1.agencia =ag1;
-		conta1.cliente =felipe;
-		
-		
-		
 		//imprimindo dados
 		System.out.println("limite é de: R$ "+ conta1.limiteConta);
-		System.out.println("saldo com limite: R$ " +conta1.consultaSaldo());
-		System.out.println(conta1.imprimeExtrato(15));
+		System.out.println("saldo com limite: R$ " +conta1.consultaSaldo());		
+		System.out.println(conta1.imprimeExtrato(1));
+		System.out.println(felipe.codigo);
+		System.out.println(felipe.nome);
+
 	}
 
 }

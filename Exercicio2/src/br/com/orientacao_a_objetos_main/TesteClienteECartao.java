@@ -3,11 +3,11 @@ package br.com.orientacao_a_objetos_main;
 import br.com.orientacao_a_objetos.CartaoDeCredito;
 import br.com.orientacao_a_objetos.Cliente;
 
-public class TesteCliente {
+public class TesteClienteECartao {
 
 	public static void main(String[] args) {
 		Cliente alirio = new Cliente();
-		CartaoDeCredito cdc = new CartaoDeCredito();
+		CartaoDeCredito cdc = new CartaoDeCredito(123);
 		
 		//Definindo dados cliente
 		alirio.codigo = 1;

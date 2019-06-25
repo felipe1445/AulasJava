@@ -8,6 +8,9 @@ public class Conta {
 	public Cliente cliente;
 	public Agencia agencia;
 	
+	public Conta (Cliente cliente) {
+		this.cliente = cliente;
+	}
 	
 	public void deposita(double valor) {
 		this.saldoConta+=valor;
@@ -19,6 +22,11 @@ public class Conta {
 	
 	public double consultaSaldo() {
 		return this.saldoConta+=limiteConta;
+	}
+	
+	public void transferirValor( Conta contaDestino, double valor ) {
+		 this.saldoConta -= valor ;
+		 contaDestino.saldoConta += valor;
 	}
 	
 	public String imprimeExtrato(int dias) {

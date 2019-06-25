@@ -6,6 +6,11 @@ public class CartaoDeCredito {
 	//vinculo
 	public Cliente cliente;
 	
+	
+	public CartaoDeCredito(int numeroCartao) {		
+		this.numeroCartao = numeroCartao;		
+	}
+	
 	void novocartaoCredito() {		
 	}
 	void alterarlimiteCredito() {		

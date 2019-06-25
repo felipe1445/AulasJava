@@ -17,8 +17,8 @@ public class TesteBanco {
 		
 		//testes feitos para os exercicios 1~16 e atualizado nas outras classes
 		
-		CartaoDeCredito cartao1 = new CartaoDeCredito();
-		CartaoDeCredito cartao2 = new CartaoDeCredito();	
+		CartaoDeCredito cartao1 = new CartaoDeCredito(123);
+		CartaoDeCredito cartao2 = new CartaoDeCredito(1234);	
 		
 		cartao1.numeroCartao = 456;
 		cartao1.dataValidadeCartao = "20/01/2100";	
@@ -30,8 +30,8 @@ public class TesteBanco {
 		System.out.printf("numero do cartao é: %d \ndata de validade é: %s ", cartao1.numeroCartao, cartao1.dataValidadeCartao);
 		System.out.printf("\nnumero do cartao 2 é: %d \ndata de validade 2 é: %s ", cartao2.numeroCartao, cartao2.dataValidadeCartao);
 		
-		Agencia ag1 = new Agencia();
-		Agencia ag2 = new Agencia();
+		Agencia ag1 = new Agencia(1);
+		Agencia ag2 = new Agencia(2);
 		
 		ag1.numeroAgencia = 1;
 		ag2.numeroAgencia = 2;

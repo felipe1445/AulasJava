@@ -2,7 +2,7 @@ package br.com.orientacao_a_objetos;
 
 public class Funcionario {
 	public String nomeFunc;
-	public double salarioFunc;
+	public double salarioFunc = 1000.0;
 	
 
 	public void aumentaSalario(double valor) {
