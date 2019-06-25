@@ -1,15 +1,16 @@
 package br.com.orientacao_a_objetos_main;
 
-import br.com.orientacao_a_objetos.Cliente;
+
+import br.com.orientacao_a_objetos.Agencia;
 import br.com.orientacao_a_objetos.Conta;
 
 public class TesteMetodosConta {
 
 	public static void main(String[] args) {
-		Cliente felipe = new Cliente();
-		Cliente alicio = new Cliente();
-		Conta c1 = new Conta(felipe);
-		Conta c2 = new Conta(alicio);
+		Agencia ag1 = new Agencia(1);
+		Agencia ag2 = new Agencia(2);
+		Conta c1 = new Conta(ag1);
+		Conta c2 = new Conta(ag2);
 
 		// testando metodos da classe conta
 		c1.deposita(1000);

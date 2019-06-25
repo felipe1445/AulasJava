@@ -8,20 +8,15 @@ public class TesteContaAgencia {
 
 	public static void main(String[] args) {		
 		Agencia ag1 = new Agencia(1);
-		Cliente felipe = new Cliente();
-		Conta conta1 = new Conta(felipe);
 		
-		//definindo dados cliente
-		felipe.nome = "felipe";
-		felipe.codigo = 1;
+		Conta conta1 = new Conta(ag1);		
+		
 		
 		//definindo dados agencia
 		ag1.numeroAgencia = 123;	
 		
 		//associando as classes
-		conta1.agencia =ag1;
-		conta1.cliente =felipe;
-		
+		conta1.agencia =ag1;		
 		
 		
 		//imprimindo dados
