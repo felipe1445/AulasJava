@@ -11,23 +11,19 @@ public class TesteFuncionario2 {
 		funcionario1.nomeFunc = Teclado.lerTexto("digite o nome: ");
 		
 		while(verifica) {
-			String consultaDados = Teclado.lerTexto("você quer consultar dados? (S/N)");
-			if (consultaDados.equalsIgnoreCase("s")) {
-				System.out.println("nome: " +funcionario1.nomeFunc + "\nSalario: "+funcionario1.salarioFunc);				
-			}else if (consultaDados.equalsIgnoreCase("n")) {
-				String alteraNome = Teclado.lerTexto("você quer alterar o nome? (S/N)");
-				if (alteraNome.equalsIgnoreCase("s")) {
+			int auxiliar = Teclado.lerInt("o que vc quer fazer: consultar(1) alterar(2) sair(3)");
+			if (auxiliar==1) {
+				System.out.println(funcionario1.consultaDados());				
+			}else if (auxiliar==2) {				
 					funcionario1.nomeFunc = Teclado.lerTexto("digite o nome: ");
 					funcionario1.salarioFunc = Teclado.lerDouble("digite o salario: ");
-				}
-				else if (alteraNome.equalsIgnoreCase("n")) {
-					verifica=false;
-				}	
-				
 			}
-					
+			else if (auxiliar==3) {
+					verifica=false;
+			}					
+		}					
 			
-		}
 	}
-
 }
+
+
