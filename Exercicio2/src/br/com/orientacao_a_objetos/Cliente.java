@@ -1,7 +1,21 @@
 package br.com.orientacao_a_objetos;
 
 public class Cliente {
-	public String nome;
-	public int codigo;	
+	private String nome;
+	private int codigo;
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}	
 
 }

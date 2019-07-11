@@ -1,10 +1,35 @@
 package br.com.orientacao_a_objetos;
 
 public class Aluno {
-	public String nome;
-	public int rg;
-	public String datanascAluno;
+	private String nome;
+	private int rg;
+	private String datanascAluno;
 	//vinculo
-	public Turma turma;
+	private Turma turma;
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getRg() {
+		return rg;
+	}
+	public void setRg(int rg) {
+		this.rg = rg;
+	}
+	public String getDatanascAluno() {
+		return datanascAluno;
+	}
+	public void setDatanascAluno(String datanascAluno) {
+		this.datanascAluno = datanascAluno;
+	}
+	public Turma getTurma() {
+		return turma;
+	}
+	public void setTurma(Turma turma) {
+		this.turma = turma;
+	}
+	
 	
 }

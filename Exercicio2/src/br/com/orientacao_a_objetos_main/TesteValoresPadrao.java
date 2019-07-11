@@ -11,11 +11,11 @@ public class TesteValoresPadrao {
 		Conta conta1 = new Conta(ag1);
 		
 		//imprimindo dados
-		System.out.println("limite é de: R$ "+ conta1.limiteConta);
-		System.out.println("saldo: " + conta1.saldoConta);
+		System.out.println("limite é de: R$ "+ conta1.getLimiteConta());
+		System.out.println("saldo: " + conta1.getSaldoConta());
 		System.out.println("saldo com limite: R$ " +conta1.consultaSaldo());		
 		System.out.println(conta1.imprimeExtrato(1));
-		System.out.println("numero da agencia: "+conta1.agencia.numeroAgencia);		
+		System.out.println("numero da agencia: "+conta1.agencia.getNumeroAgencia());		
 
 	}
 

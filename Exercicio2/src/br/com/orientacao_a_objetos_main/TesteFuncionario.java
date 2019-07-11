@@ -5,19 +5,19 @@ import br.com.orientacao_a_objetos.Funcionario;
 public class TesteFuncionario {
 
 	public static void main(String[] args) {
-		Funcionario func1 = new Funcionario();
-		Funcionario func2 = new Funcionario();
+		Funcionario func1 = new Funcionario(null, 0);
+		Funcionario func2 = new Funcionario(null, 0);
 		
 		//definindo dados para 2 funcionarios
-		func1.nomeFunc = "Antenor";
-		func1.salarioFunc = 200;
-		func2.nomeFunc = "Alicio";
-		func2.salarioFunc = 300;
+		func1.setNomeFunc("Antenor");
+		func1.setSalarioFunc(200);
+		func2.setNomeFunc("Alicio");
+		func2.setSalarioFunc(300);
 		
 		//imprimindo dados com salario normal
 		System.out.println("mostrando salario normal:");
-		System.out.println(func1.consultaDados());
-		System.out.println(func2.consultaDados());
+		func1.mostraDados();
+		func2.mostraDados();
 		
 		//testando metodos de aumento de salario
 		func1.aumentaSalario(200);
@@ -27,8 +27,8 @@ public class TesteFuncionario {
 		
 		System.out.println("-------------------------------");
 		System.out.println("salario alterado: ");
-		System.out.println(func1.consultaDados());
-		System.out.println(func2.consultaDados());
+		func1.mostraDados();
+		func2.mostraDados();
 	}
 
 }

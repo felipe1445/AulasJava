@@ -19,7 +19,7 @@ public class TesteMetodosConta {
 		//questao 39
 		c1.transferirValor(c2, 200.0);		
 		
-		System.out.println(c2.saldoConta);
+		System.out.println(c2.getSaldoConta());
 	}
 
 }

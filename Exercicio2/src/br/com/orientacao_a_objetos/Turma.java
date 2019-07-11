@@ -1,8 +1,34 @@
 package br.com.orientacao_a_objetos;
 
 public class Turma {
-	public String periodo;
-	public int serie;
-	public String sigla;
-	public String tipoEnsino;
+	private String periodo;
+	private int serie;
+	private String sigla;
+	private String tipoEnsino;
+	
+	
+	public String getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
+	}
+	public int getSerie() {
+		return serie;
+	}
+	public void setSerie(int serie) {
+		this.serie = serie;
+	}
+	public String getSigla() {
+		return sigla;
+	}
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+	public String getTipoEnsino() {
+		return tipoEnsino;
+	}
+	public void setTipoEnsino(String tipoEnsino) {
+		this.tipoEnsino = tipoEnsino;
+	}
 }

@@ -10,18 +10,18 @@ public class TesteClienteECartao {
 		CartaoDeCredito cdc = new CartaoDeCredito(123);
 		
 		//Definindo dados cliente
-		alirio.codigo = 1;
-		alirio.nome = "alirio";		
+		alirio.setCodigo(1);
+		alirio.setNome("alirio");		
 		
 		//associando ao cartao
-		cdc.cliente = alirio;	
+		cdc.setCliente(alirio);	
 		
 		//definindo dados cartao
-		cdc.numeroCartao = 123;
-		cdc.dataValidadeCartao = "10/01/2001";
+		cdc.setNumeroCartao(123);
+		cdc.setDataValidadeCartao("10/01/2001");
 		
 		//imprimindo dados do cliente usando a classe cartao
-		System.out.println("nome cliente do cartao: " +cdc.cliente.nome);
+		System.out.println("nome cliente do cartao: " +cdc.getCliente().getNome());
 	}
 
 }

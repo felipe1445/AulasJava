@@ -10,37 +10,37 @@ public class TesteBanco {
 		Cliente conta1 = new Cliente();
 		Cliente conta2 = new Cliente();
 		
-		conta1.nome = "felipe";
-		conta1.codigo = 123;
-		conta2.nome = "gustavo";
-		conta2.codigo = 321;
+		conta1.setNome("felipe");
+		conta1.setCodigo(123);
+		conta2.setNome("gustavo");
+		conta2.setCodigo(321);
 		
 		//testes feitos para os exercicios 1~16 e atualizado nas outras classes
 		
 		CartaoDeCredito cartao1 = new CartaoDeCredito(123);
 		CartaoDeCredito cartao2 = new CartaoDeCredito(1234);	
 		
-		cartao1.numeroCartao = 456;
-		cartao1.dataValidadeCartao = "20/01/2100";	
+		cartao1.setNumeroCartao(456);
+		cartao1.setDataValidadeCartao("20/01/2100");	
 		
-		cartao2.numeroCartao = 789;
-		cartao2.dataValidadeCartao = "19/11/1980";
+		cartao2.setNumeroCartao(789);
+		cartao2.setDataValidadeCartao("19/11/1980");
 		
 		
-		System.out.printf("numero do cartao é: %d \ndata de validade é: %s ", cartao1.numeroCartao, cartao1.dataValidadeCartao);
-		System.out.printf("\nnumero do cartao 2 é: %d \ndata de validade 2 é: %s ", cartao2.numeroCartao, cartao2.dataValidadeCartao);
+		System.out.printf("numero do cartao é: %d \ndata de validade é: %s ", cartao1.getNumeroCartao(), cartao1.getDataValidadeCartao());
+		System.out.printf("\nnumero do cartao 2 é: %d \ndata de validade 2 é: %s ", cartao2.getNumeroCartao(), cartao2.getDataValidadeCartao());
 		
 		Agencia ag1 = new Agencia(1);
 		Agencia ag2 = new Agencia(2);
 		
-		ag1.numeroAgencia = 1;
-		ag2.numeroAgencia = 2;
+		ag1.setNumeroAgencia(1);
+		ag2.setNumeroAgencia(2);
 		
-		System.out.println("\nNumero da agencia: "+ag1.numeroAgencia);
-		System.out.println("Numero da agencia 2: "+ag2.numeroAgencia);
+		System.out.println("\nNumero da agencia: "+ag1.getNumeroAgencia());
+		System.out.println("Numero da agencia 2: "+ag2.getNumeroAgencia());
 		
-		System.out.println("nome cliente: "+ conta1.nome + "\nconta: " + conta1.codigo);
-		System.out.println("nome cliente: "+ conta2.nome + "\nconta: " + conta2.codigo);
+		System.out.println("nome cliente: "+ conta1.getNome() + "\nconta: " + conta1.getCodigo());
+		System.out.println("nome cliente: "+ conta2.getNome() + "\nconta: " + conta2.getCodigo());
 	}
 
 }

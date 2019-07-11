@@ -1,10 +1,10 @@
 package br.com.orientacao_a_objetos;
 
 public class CartaoDeCredito {
-	public int numeroCartao;
-	public String dataValidadeCartao;
+	private int numeroCartao;
+	private String dataValidadeCartao;
 	//vinculo
-	public Cliente cliente;
+	private Cliente cliente;
 	
 	
 	public CartaoDeCredito(int numeroCartao) {		
@@ -15,4 +15,31 @@ public class CartaoDeCredito {
 	}
 	void alterarlimiteCredito() {		
 	}
+
+	public int getNumeroCartao() {
+		return numeroCartao;
+	}
+
+	public void setNumeroCartao(int numeroCartao) {
+		this.numeroCartao = numeroCartao;
+	}
+
+	public String getDataValidadeCartao() {
+		return dataValidadeCartao;
+	}
+
+	public void setDataValidadeCartao(String dataValidadeCartao) {
+		this.dataValidadeCartao = dataValidadeCartao;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	
+	
 }
